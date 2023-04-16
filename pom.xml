@@ -23,6 +23,9 @@
 		</plugins>
 	</build>
   <dependencies>
+	  <dependency org="org.apache.maven.plugins" name="maven-compiler-plugin" rev="3.11.0">
+		  <artifact name="maven-compiler-plugin" type="maven-plugin" />
+	</dependency>
 	   <dependency>
 			  <groupId>org.apache.maven.plugins</groupId>
 			  <artifactId>maven-compiler-plugin</artifactId>
