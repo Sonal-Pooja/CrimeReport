@@ -23,13 +23,10 @@
 		</plugins>
 	</build>
   <dependencies>
-	  <dependency org="org.apache.maven.plugins" name="maven-compiler-plugin" rev="3.11.0">
-		  <artifact name="maven-compiler-plugin" type="maven-plugin" />
-	</dependency>
 	   <dependency>
 			  <groupId>org.apache.maven.plugins</groupId>
 			  <artifactId>maven-compiler-plugin</artifactId>
-			  <version>3.11.0</version>
+			  <version>3.8.1</version>
 			  <type>maven-plugin</type>
 			</dependency>
 	   <dependency>
