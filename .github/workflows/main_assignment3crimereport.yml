@@ -27,7 +27,7 @@ jobs:
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
-          name: java-app
+          name: OnlineCrimeReport
           path: '${{ github.workspace }}/target/*.war'
 
   deploy:
@@ -41,7 +41,7 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
         with:
-          name: java-app
+          name: OnlineCrimeReport
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
@@ -51,3 +51,4 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_02856C04074C487887E7CA44313FDA7A }}
           package: '*.war'
+          
